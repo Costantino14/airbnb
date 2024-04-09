@@ -1,0 +1,107 @@
+nav {
+    color: black;
+}
+
+.nav {
+    --bs-nav-link-color: black
+}
+
+.nav {
+    --bs-nav-link-hover-color: black
+}
+
+#img-profile {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    margin-left: 12px;
+}
+
+.dropdown-toggle::after {
+    background-color: transparent;
+    border: 0 transparent;
+}
+
+.dropdown {
+    margin-left: 25px;
+}
+
+.img-fluid {
+    margin-left: 65px;
+
+    
+}
+
+.stays {
+    margin-left: 100px
+}
+
+h1 {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.plus {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(228, 29, 86);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+
+.filter {
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.spanfilter {
+    background-color: rgb(248, 249, 250);
+    border-radius: 20px;
+    border: solid 1px black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.enter {
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+
+.review {
+    margin-left: 100px;
+    margin-top: 50px
+}
+
+.imgannounce {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.appartment {
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.announce {
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
