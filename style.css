@@ -4,6 +4,15 @@ body {
     background-color: #000;
 }
 
+nav {
+    font-size: 12px;
+}
+
+.navbar-nav.col-lg-6.justify-content-lg-center {
+    margin-top: 0;
+    padding-top: -10px;
+}
+
 #img-profile {
     width: 25px;
     height: 25px;
@@ -15,24 +24,59 @@ body {
     display: none;
 }
 
-nav {
-    font-size: 12px;
-}
 
-.container.bg-light {
-    width: 700px;
-    height: 50px;
-    font-size: 12px;
-    border-radius: 50px;
+/*BARRA RICERCA*/
+
+#barra-ricerca {
+    font-size: 15px;
+    background-color: white;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .ricerca {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 30px;
     border-radius: 50%;
     background-color: #e41d56;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#location, #check-in, #check-out, #guest {
+    border: transparent;
+}
+
+
+
+
+             /*Media Query Laptop Settings*/
+
+@media screen and (min-width: 992px) { 
+
+    #barra-ricerca {
+        font-size: 10px;
+        background-color: white;
+        margin: 0 350px 0 350px;
+        padding: 5px 10px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .ricerca {
+        margin-left: 50px;
+    }
+    
+
 }
