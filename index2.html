@@ -20,69 +20,123 @@
 
     <!--NAVBAR-->
     <nav
-      class="d-flex justify-content-center justify-content-md-between py-2 mb-4 px-5 pt-3 bg-white"
+      class="navbar navbar-expand-lg navbar-dark mt-1"
+      aria-label="Thirteenth navbar example"
     >
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a
-          href="/"
-          class="d-inline-flex link-body-emphasis text-decoration-none"
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <img src="logo-pink.png" alt="logo airbnb" class="img-fluid w-25" />
-        </a>
-      </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="nav col-md-3 text-end">
-        <a href="#" class="nav-link">Become a host</a>
-        <a href="#" class="nav-link"><i class="bi bi-globe"></i></a>
-
-        <div class="dropdown">
-          <a
-            class="btn btn-white dropdown-toggle rounded-5 pe-1 ps-0 d-flex align-items-center"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="bi bi-list"></i>
-            <img src="propic.png" alt="img profilo" id="img-profile" />
+        <div
+          class="collapse navbar-collapse bg-white d-lg-flex justify-content-between mx-4"
+          id="navbarsExample11"
+        >
+          <a class="navbar-brand col-lg-3 col-sm-12 " href="#">
+            <img
+              src="assets/logo-pink.png"
+              alt="logo airbnb"
+              class="logo-img margin-start"
+            />
           </a>
+
+          <div class="nav margin-end">
+            <a href="#" id="host" class="nav-link link-dark">Become a host</a>
+            <a href="#" id="globe" class="nav-link link-dark"
+              ><i class="bi bi-globe"></i
+            ></a>
+
+            <div class="dropdown">
+              <a
+                class="btn btn-body dropdown-toggle rounded-5 p-1 d-flex align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-list me-2"></i>
+                <img
+                  src="assets/propic.png"
+                  alt="img profilo"
+                  id="img-profile"
+                />
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-gear me-2"></i>Account</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-airplane me-2"></i>Bookings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-heart me-2"></i> Favourites</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+  
 
     <!--UNDER-NAV-->
 
-    <div class="container-fluid">
+    <div class="container mt-5">
       <div class="row">
-        <span class="stays">10 Stays</span>
-        <h1>
-          Stays in Genova <span class="plus"><i class="bi bi-plus"></i></span>
-        </h1>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="filter">
-          <span class="spanfilter">Available Houses</span>
-          <span class="spanfilter">Booked Houses</span>
-          <span class="spanfilter">All Houses</span>
+        <div class="col mb-3">
+          <span class="stays">10 Stays</span>
         </div>
-      </div>
-    </div>
-
-    <div class="enter container-fluid">
-      <span>Enter dates and number of guests to see the total prices per night.</span>
-    </div>
-
-    <div class="review container-fluid">
-      <span>Review COVID-19 travel restrictions before you book.  <a href="">Read More</a></span>
-    </div>
-
-    <div class="appartment container-fluid">
-      <a href="/index3.html">
-      <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+      </div> <!--Si chiude la row 1-->
+      <div class="row">
+        <div class="col mb-3">
+          <h1>
+            Stays in Genova <span class="plus"><i class="bi bi-plus"></i></span>
+          </h1>
+        </div>
+      </div> <!--Si chiude la row 2-->
+      <div class="row">
+        <div class="col mb-3">
+          <div class="filter">
+            <span class="spanfilter">Available Houses</span>
+            <span class="spanfilter">Booked Houses</span>
+            <span class="spanfilter">All Houses</span>
+          </div>
+        </div>
+      </div> <!--Si chiude la row 3-->
+      <div class="row">
+        <div class="col">
+          <div class="enter ">
+            <span>Enter dates and number of guests to see the total prices per night.</span>
+          </div>
+      
+        </div>
+      </div> <!--Si chiude la row 4-->
+      <div class="row">
+        <div class="col">
+          <div class="review">
+            <span>Review COVID-19 travel restrictions before you book.  <a href="">Read More</a></span>
+          </div>
+        </div>
+      </div> <!--Si chiude la row 5-->
+      <div class="row mt-5">
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
             <span style="font-weight: bold;">2.75 </span> 
@@ -90,94 +144,116 @@
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
-        </div></a>  
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+        <div class="col-12 col-lg-3 ">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+      </div> <!--Si chiude la row 6-->
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
-        <div class="announce">
-            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce">
+        </div>
+      </div> <!--Si chiude la row 7-->
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <div class="announce">
+            <img src="974d5bb2-79bb-44fb-94b5-95db4c37e207.webp" alt="" class="imgannounce img-fluid ">
            <div class="info">
             <i class="bi bi-star-fill" style="margin-right: 10px; color: orange;"></i>
-            <span style="font-weight: bold;">2.75</span> 
+            <span style="font-weight: bold;">2.75 </span> 
             <span>&nbsp;&bull;&nbsp;4 ratings</span>
             <span>Apartment &bull; Genova</span>
             <span>The windy house</span>
            </div>
         </div>
+        </div>
+      </div> <!--Si chiude la row 8-->
+      
 
-        
-    </div>
 
     <script
       src="https://kit.fontawesome.com/34f46b6dcf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
