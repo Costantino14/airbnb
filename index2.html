@@ -20,7 +20,7 @@
 
     <!--NAVBAR-->
     <nav
-      class="navbar navbar-expand-lg navbar-dark mt-1"
+      class="navbar navbar-expand-lg navbar-dark"
       aria-label="Thirteenth navbar example"
     >
       <div class="container-fluid">
@@ -37,26 +37,27 @@
         </button>
 
         <div
-          class="collapse navbar-collapse bg-white d-lg-flex justify-content-between mx-4"
+          class="collapse navbar-collapse bg d-lg-flex justify-content-between mx-4"
           id="navbarsExample11"
         >
-          <a class="navbar-brand col-lg-3 col-sm-12 " href="#">
+          <a class="navbar-brand col-lg-3 col-sm-12 ms-2" href="#">
             <img
               src="assets/logo-pink.png"
               alt="logo airbnb"
               class="logo-img margin-start"
             />
           </a>
-
+          <hr>
           <div class="nav margin-end">
-            <a href="#" id="host" class="nav-link link-dark">Become a host</a>
+            <a href="#" id="host" class="nav-link link-dark"><span class="no-display"><i class="bi bi-house-fill me-4 fs-1 ms-3"></i></span >Become a host</a>
+            <hr>
             <a href="#" id="globe" class="nav-link link-dark"
               ><i class="bi bi-globe"></i
-            ></a>
-
+            ><span class="fw-bold fs-6 no-display explore">Explore</span> </a>
+            <hr>
             <div class="dropdown">
               <a
-                class="btn btn-body dropdown-toggle rounded-5 p-1 d-flex align-items-center"
+                class="btn btn-body dropdown-toggle rounded-5 p-1 me-5"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -67,10 +68,12 @@
                   src="assets/propic.png"
                   alt="img profilo"
                   id="img-profile"
+                  class=""
                 />
+                <span class="fw-bold fs-6 no-display account">Account</span>
               </a>
 
-              <ul class="dropdown-menu dropdown-menu-end">
+              <ul class="dropdown-menu dropdown-menu-end ">
                 <li>
                   <a class="dropdown-item" href="#"
                     ><i class="bi bi-gear me-2"></i>Account</a
@@ -96,7 +99,7 @@
 
     <!--UNDER-NAV-->
 
-    <div class="container mt-5">
+    <div class="container">
       <div class="row">
         <div class="col mb-3">
           <span class="stays">10 Stays</span>

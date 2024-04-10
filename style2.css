@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+nav {
+  width:100% !important;
+}
+
 #img-profile {
   width: 30px;
   height: 30px;
@@ -20,6 +24,14 @@ body {
 
 .logo {
   width: 100px;
+}
+
+hr {
+  display:none;
+}
+
+.no-display{
+  display:none;
 }
 
 h1 {
@@ -44,7 +56,6 @@ h1 {
 .filter {
   margin-top: 25px;
 }
-
 
 .spanfilter {
   background-color: rgb(248, 249, 250);
@@ -86,9 +97,20 @@ h1 {
   width: 100px;
 }
 
-
+.bg {
+  position: absolute !important;
+  top: 40px !important;
+  border: 1px solid #ff385c;
+  background-color: white;
+  z-index: 1000;
+}
 
 @media (max-width: 576px) {
+
+  .container{
+    margin-top:30px;
+  }
+
   .col {
     display: flex;
     flex-direction: column;
@@ -128,16 +150,17 @@ h1 {
   .navbar-collapse {
     position: absolute;
     top: 100%;
-    left: -12px;
+    left:-23px;
     color: #ff385c;
   }
 
   .logo-img {
-    margin-top: 10px;
-    margin-left: 8px;
     width: 60px;
-    margin-bottom: 10px;
+    margin-left:10px;
+    margin-top:10px;
   }
+
+  
 
   #host:hover {
     color: #ff385c !important;
@@ -151,10 +174,63 @@ h1 {
     display: none;
   }
 
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #host {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  #globe {
+    font-size: 35px;
+    margin-left: 10px;
+
+  }
+
+
+  #img-profile {
+    width: 35px;
+    height: 35px;
+    margin-left:-6px;
+    margin-bottom:10px;
+  }
+
+  hr {
+    color:#ff385c;
+    display:block;
+  }
+
+  .no-display{
+    display:inline;
+  }
+  .navbar-collapse{
+    width:100%;
+    border-left:none;
+    border-right:none;
+  }
  
+  .dropdown-toggle {
+    width:100px;
+  }
+
+  .explore {
+    margin-left:20px;
+  }
+
+  .account {
+    margin-left:20px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+
+ .container{
+    margin-top:30px;
+  }
+
   .col {
     display: flex;
     flex-direction: column;
@@ -192,16 +268,17 @@ h1 {
   .navbar-collapse {
     position: absolute;
     top: 100%;
-    left: -12px;
+    left:-23px;
     color: #ff385c;
   }
 
   .logo-img {
-    margin-top: 10px;
-    margin-left: 8px;
     width: 60px;
-    margin-bottom: 10px;
+    margin-left:10px;
+    margin-top:10px;
   }
+
+  
 
   #host:hover {
     color: #ff385c !important;
@@ -214,9 +291,126 @@ h1 {
   .bi.bi-list {
     display: none;
   }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #host {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  #globe {
+    font-size: 35px;
+    margin-left: 10px;
+
+  }
+
+
+  #img-profile {
+    width: 35px;
+    height: 35px;
+    margin-left:-6px;
+    margin-bottom:10px;
+  }
+
+  hr {
+    color:#ff385c;
+    display:block;
+  }
+
+  .no-display{
+    display:inline;
+  }
+  .navbar-collapse{
+    width:100%;
+    border-left:none;
+    border-right:none;
+  }
+ 
+  .dropdown-toggle {
+    width:100px;
+  }
+
+  .explore {
+    margin-left:20px;
+  }
+
+  .account {
+    margin-left:20px;
+  }
+ 
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left:-23px;
+    color: #ff385c;
+  }
+
+  .logo-img {
+    width: 60px;
+    margin-left:10px;
+    margin-top:10px;
+  }
+
+  
+
+  #host:hover {
+    color: #ff385c !important;
+  }
+
+  #globe:hover {
+    color: #ff385c !important;
+  }
+
+  .bi.bi-list {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #host {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  #globe {
+    font-size: 35px;
+    margin-left: 10px;
+
+  }
+
+
+  #img-profile {
+    width: 35px;
+    height: 35px;
+    margin-left:-6px;
+    margin-bottom:10px;
+  }
+
+  hr {
+    color:#ff385c;
+    display:block;
+  }
+
+  .no-display{
+    display:inline;
+  }
+ 
+ 
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+  .container{
+    margin-top:30px;
+  }
+
   .col {
     display: flex;
     flex-direction: column;
@@ -242,16 +436,17 @@ h1 {
   .navbar-collapse {
     position: absolute;
     top: 100%;
-    left: -12px;
+    left:-23px;
     color: #ff385c;
   }
 
   .logo-img {
-    margin-top: 10px;
-    margin-left: 8px;
     width: 60px;
-    margin-bottom: 10px;
+    margin-left:10px;
+    margin-top:10px;
   }
+
+  
 
   #host:hover {
     color: #ff385c !important;
@@ -265,8 +460,122 @@ h1 {
     display: none;
   }
 
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #host {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  #globe {
+    font-size: 35px;
+    margin-left: 10px;
+
+  }
 
 
+  #img-profile {
+    width: 35px;
+    height: 35px;
+    margin-left:-6px;
+    margin-bottom:10px;
+  }
 
+  hr {
+    color:#ff385c;
+    display:block;
+  }
+
+  .no-display{
+    display:inline;
+  }
+  .navbar-collapse{
+    width:100%;
+    border-left:none;
+    border-right:none;
+  }
+ 
+  .dropdown-toggle {
+    width:100px;
+  }
+
+  .explore {
+    margin-left:20px;
+  }
+
+  .account {
+    margin-left:20px;
+  }
 }
 
+@media (min-width:992px) {
+
+
+  .container {
+    margin-top:100px;
+  }
+
+  .logo-img {
+    width: 100px;
+  }
+
+  
+
+  #host:hover {
+    color: #ff385c !important;
+  }
+
+  #globe:hover {
+    color: #ff385c !important;
+  }
+
+  .bi.bi-list {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #host {
+    font-weight: normal;
+    margin-right:20px;
+  }
+
+  #globe {
+    font-size: 25px;
+    padding:0;
+
+  }
+
+
+  #img-profile {
+    width: 30px;
+    height: 30px;
+    margin:0;
+   
+  
+  }
+
+
+
+  .navbar-collapse{
+    position: absolute;
+    top:0 !important;
+    width:100%;
+    display:flex;
+    border:none;
+
+  }
+ 
+  .dropdown-toggle{
+    width:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
