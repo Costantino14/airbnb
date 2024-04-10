@@ -1,10 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-    background-color: #000;
-}
-
 /*NavBar*/
 
 nav {
@@ -95,6 +91,40 @@ label {
 #go-near button{
     font-size: small;
     padding: 5px 10px;
+}
+
+
+/*SECTION 2*/
+
+.col-6 img {
+    max-width: 65px;
+    border-radius: 10px;
+    max-height: 67px;
+}
+
+.container .row:last-child {
+    padding-top: 10px;
+}
+
+.description {
+    padding-left: 10px;
+    color: #000;
+}
+
+.description, h6, p {
+    padding-top: 7px; 
+}
+
+h6 {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.description p {
+    font-size: 12px;
+   
 }
 
 
