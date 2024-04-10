@@ -20,44 +20,45 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./assets/logo-pink.png" />
-      </div>
-      <div class="options d-flex">
-        <div>
-          <a href="#" class="link-dark text-decoration-none me-3"
-            >Become a host</a
-          >
-        </div>
-        <div>
-          <a href="#" class="link-dark text-decoration-none"
-            ><i class="bi bi-globe"></i
-          ></a>
-        </div>
-        <div>
-          <div class="dropdown">
-            <button
-              class="btn btn-body dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="bi bi-list"></i>
-              <img src="assets/propic.png" />
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Account</a></li>
-              <li><a class="dropdown-item" href="#"><i class="bi bi-airplane me-2"></i>Bookings</a></li>
-              <li><a class="dropdown-item" href="#"><i class="bi bi-heart me-2"></i> Favourites</a></li>
-            </ul>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark pt-0" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+  
+          <div class="collapse navbar-collapse bg-white  d-lg-flex justify-content-between mx-4" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 col-sm-12 " href="#">
+                <img src="assets/logo-pink.png" alt="logo airbnb" id="logo" class="logo-img " >
+            </a>
+            
+            <div class="nav  me-1">
+                <a href="#" id="host" class="nav-link link-dark ">Become a host</a>
+                <a href="#" id="globe" class="nav-link link-dark "><i class="bi bi-globe"></i></a>
+                
+                <div class="dropdown">
+                    <a class="btn btn-body dropdown-toggle rounded-5 p-1 d-flex align-items-center " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list me-2"></i>
+                        <img src="assets/propic.png" alt="img profilo" id="img-profile">
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-end ">
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Account</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-airplane me-2"></i>Bookings</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-heart me-2"></i> Favourites</a></li>
+                    </ul>
+                  </div>
+              </div>
           </div>
         </div>
-      </div>
-    </header>
+      </nav>
+
+  
+      
+      
 
     <main>
-      <div class="container my-5">
+      <div class="container ">
         <div class="row">
           <h3>Blarmore home</h3>
         </div>
@@ -67,7 +68,7 @@
             <div class="rating">
               <strong>4</strong>, 6 ratings &#183; Inverness
             </div>
-            <div class="icons d-flex">
+            <div class="icons d-flex margin-end">
               <div class="me-4">
                 <i class="bi bi-box-arrow-up me-2"></i>Share
               </div>
@@ -77,40 +78,25 @@
         </div>
         <!--Qui finisce row 2-->
         <div class="row">
-          <div class="col">
-            <img
-              src="./assets/1.webp"
-              alt="immagine casa"
-              class="rounded-start-5"
-            />
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <img src="./assets/2.webp" class="w-100" alt="immagine casa" />
-              </div>
-              <div class="col">
-                <img
-                  src="./assets/3.webp"
-                  class="w-100 rounded-image1"
-                  alt="immagine casa"
-                />
-              </div>
+            <div class="col-12 col-lg-6">
+              <img src="./assets/1.webp" alt="immagine casa" class="main-img rounded-main w-100" />
             </div>
-            <div class="row mt-5">
-              <div class="col">
-                <img src="./assets/4.webp" class="w-100" alt="immagine casa" />
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class="col d-flex">
+                  <img src="./assets/2.webp" class="side-img" alt="immagine casa" />
+                  <img src="./assets/3.webp" class="side-img rounded-image1" alt="immagine casa" />
+                </div>
               </div>
-              <div class="col">
-                <img
-                  src="./assets/5.webp"
-                  class="w-100 rounded-image2"
-                  alt="immagine casa"
-                />
+              <div class="row">
+                <div class="col d-flex">
+                  <img src="./assets/4.webp" class="side-img mt-0" alt="immagine casa" />
+                  <img src="./assets/5.webp" class="rounded-image2 side-img m-0" alt="immagine casa" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          
         <!--Qui finisce row 3-->
         <div class="row mt-5">
           <div class="col">
@@ -230,20 +216,21 @@
           <div class="col d-flex flex-column">
             <label for="rating">Rating</label>
             <select id="rating">
-              <option>1 stella<i class="bi bi-star-fill"></i></option>
+              <option>1 star<i class="bi bi-star-fill"></i></option>
               <option>
-                2 stelle <i class="bi bi-star-fill"></i
+                2 stars <i class="bi bi-star-fill"></i
                 ><i class="bi bi-star-fill"></i>
               </option>
               <option>
-                3 stelle<i class="bi bi-star-fill"></i
+                3 stars<i class="bi bi-star-fill"></i
                 ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </option>
               <option>
-                4 stelle<i class="bi bi-star-fill"></i
+                4 stars<i class="bi bi-star-fill"></i
                 ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
                 ><i class="bi bi-star-fill"></i>
               </option>
+              <option>5 stars</option>
             </select>
           </div>
         </div>
