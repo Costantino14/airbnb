@@ -45,7 +45,7 @@ nav {
     display: flex;
     align-items: center;
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
 
 }
 
@@ -69,7 +69,7 @@ label {
     border: transparent;
 }
 
-main {
+#section1 {
     height: 85vh;
     background-image: url(/assets/home.jpg);
     background-size: cover;
@@ -81,16 +81,20 @@ main {
     width: 200px;
     position: absolute;
     top: 60%;
-    left: 3%;
+    left: 1%;
 }
 
 #go-near h1 {
     color: #fff;
     font-size: 50px;
-    
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#go-near button{
+    font-size: small;
+    padding: 5px 10px;
 }
 
 
@@ -139,10 +143,9 @@ main {
     #go-near h1 {
         color: #fff;
         font-size: 80px;
-        
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-style: normal;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
     }
 
 
