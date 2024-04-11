@@ -15,88 +15,47 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style2.css" />
+        <!--Favicon di airbnb-->
+        <link rel="icon" type="image/png" href="./assets/icons8-airbnb-32.png" />
   </head>
   <body>
 
-    <!--NAVBAR-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      aria-label="Thirteenth navbar example"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample11"
-          aria-controls="navbarsExample11"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+ <!--NAV SCHERMO GRANDE-->
+ <div id="large" class="container-fluid pt-1">
+  <nav class="d-flex justify-content-between ">
+ <div class="logo d-flex align-items-center ">
+   <img src="./logo-pink.png" />
+ </div>
+ <div class="options mt-3">
+   <ul class="d-flex align-items-center ">
+     <li>Become a host</li>
+     <li><i class="bi bi-globe fs-5"></i></li>
+     <li><i class="bi bi-person-circle fs-4"></i></li>
+   </ul>
+ </div>
+</nav>
+</div>
 
-        <div
-          class="collapse navbar-collapse bg d-lg-flex justify-content-between mx-4"
-          id="navbarsExample11"
-        >
-          <a class="navbar-brand col-lg-3 col-sm-12 ms-2" href="#">
-            <img
-              src="assets/logo-pink.png"
-              alt="logo airbnb"
-              class="logo-img margin-start"
-            />
-          </a>
-          <hr>
-          <div class="nav margin-end">
-            <a href="#" id="host" class="nav-link link-dark"><span class="no-display"><i class="bi bi-house-fill me-4 fs-1 ms-3"></i></span >Become a host</a>
-            <hr>
-            <a href="#" id="globe" class="nav-link link-dark"
-              ><i class="bi bi-globe"></i
-            ><span class="fw-bold fs-6 no-display explore">Explore</span> </a>
-            <hr>
-            <div class="dropdown">
-              <a
-                class="btn btn-body dropdown-toggle rounded-5 p-1 me-5"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="bi bi-list me-2"></i>
-                <img
-                  src="assets/propic.png"
-                  alt="img profilo"
-                  id="img-profile"
-                  class=""
-                />
-                <span class="fw-bold fs-6 no-display account">Account</span>
-              </a>
 
-              <ul class="dropdown-menu dropdown-menu-end ">
-                <li>
-                  <a class="dropdown-item" href="#"
-                    ><i class="bi bi-gear me-2"></i>Account</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    ><i class="bi bi-airplane me-2"></i>Bookings</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    ><i class="bi bi-heart me-2"></i> Favourites</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+<!--NAV SCHERMO PICCOLO E MEDIO-->
+<div id="small" class="container-fluid">
+ <nav class="d-flex justify-content-between pt-1">
+   <div class="logo">
+     <img src="./assets/logo.png" />
+   </div>
+   <div class="options mt-3">
+     <ul>
+       <li><i class="bi bi-search fs-5"></i></li>
+       <li><i class="bi bi-globe fs-5"></i></li>
+       <li><i class="bi bi-person-circle fs-5"></i></li>
+     </ul>
+   </div>
+ </nav>
+</div>
+
+<!--FINE NAV-->
   
-
+   
     <!--UNDER-NAV-->
 
     <div class="container">

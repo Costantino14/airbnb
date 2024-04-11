@@ -14,41 +14,48 @@ main {
 }
 
 .container {
-  margin-top: 40px;
+  margin-top: 30px;
   /* Assicurati che il contenuto non superi la larghezza massima desiderata */
   max-width: 800px; /* Ad esempio, puoi impostare una larghezza massima di 800px */
 }
 
-header {
-  background-color: #ffffff;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
+.logo {
+  margin-left:20px;
 }
 
 .logo img {
-  width: 100px;
+  width:100px;
 }
 
-.logo {
-  padding-left: 40px;
-  padding-top: 10px;
+
+.options ul {
+  display:flex;
+  list-style: none;
+  gap:20px;
 }
 
-.options {
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+.options ul li {
+  cursor: pointer;
+}
+
+.options ul li:hover {
+  color: #ff385c;
+}
+
+.small {
+ background-color: #ff385c;
 }
 
 .options:last-child {
   padding-right: 30px;
 }
 
-.dropdown img {
-  width: 30px;
+#large {
+  display:block;
+}
+
+#small {
+  display:none;
 }
 
 .rounded-main {
@@ -131,9 +138,6 @@ header {
   border: 1px solid #ff385c;
 }
 
-.logo-img {
-  width: 100px;
-}
 
 .main-img {
   cursor: pointer;
@@ -157,18 +161,17 @@ header {
   padding-right: 90px;
 }
 
-.navbar-toggler-icon {
-  color: black !important;
-}
 
 .dropdown-item:hover {
   background-color: #ff385c !important;
   color: white !important;
 }
 
+
 #host:hover {
   color: #ff385c !important;
 }
+
 
 #globe:hover {
   color: #ff385c !important;
@@ -187,6 +190,18 @@ header {
   cursor: pointer;
 }
 
+.logo-img {
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
 /*MEDIA QUERIES*/
 
 /*Small devices (landscape phones)*/
@@ -204,47 +219,38 @@ header {
     position: absolute;
     right: -70px;
   }
+  
 
-  nav {
-    height: 40px;
+  #large {
+    display:none;
+  }
+
+  #small{
+    display:block;
     background-color: #ff385c;
-  }
-  .navbar-toggler-icon {
-    background-color: #ff385c;
-    position: absolute;
-    left: 10px;
-    top: 5px;
+    height:60px;
   }
 
-  .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: -12px;
-    color: #ff385c;
+  .options ul{
+    gap:30px;
   }
 
-  #logo {
-    margin-top: 10px;
-    margin-left: 8px;
-    width: 60px;
-    margin-bottom: 10px;
+  .logo {
+    margin-left:0;
+    margin-top:5px;
   }
 
-  #host:hover {
-    color: #ff385c !important;
+  .options ul li:hover {
+    color:white;
+    cursor: pointer;
   }
+ 
 
-  #globe:hover {
-    color: #ff385c !important;
-  }
 
-  .bi.bi-list {
-    display: none;
-  }
+ 
 
-  .carousel {
-    display: none;
-  }
+
+  
 }
 
 /*Medium devices (tablets)*/
@@ -273,42 +279,33 @@ header {
     right: -70px;
   }
 
-  nav {
-    height: 40px;
+  #large {
+    display:none;
+  }
+
+  #small{
+    display:block;
     background-color: #ff385c;
-  }
-  .navbar-toggler-icon {
-    background-color: #ff385c;
-    position: absolute;
-    left: 10px;
-    top: 5px;
+    height:60px;
   }
 
-  .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: -12px;
-    color: #ff385c;
+  .options ul{
+    gap:30px;
   }
 
-  #logo {
-    margin-top: 10px;
-    margin-left: 8px;
-    width: 60px;
-    margin-bottom: 10px;
+  .logo {
+    margin-left:0;
+    margin-top:5px;
   }
 
-  #host:hover {
-    color: #ff385c !important;
+  .options ul li:hover {
+    color:white;
+    cursor: pointer;
   }
 
-  #globe:hover {
-    color: #ff385c !important;
-  }
+  
+  
 
-  .bi.bi-list {
-    display: none;
-  }
 }
 
 /*Large devices*/
@@ -337,40 +334,31 @@ header {
     right: -40px;
   }
 
-  nav {
-    height: 40px;
+  #large {
+    display:none;
+  }
+
+  #small{
+    display:block;
     background-color: #ff385c;
-  }
-  .navbar-toggler-icon {
-    background-color: #ff385c;
-    position: absolute;
-    left: 10px;
-    top: 5px;
+    height:60px;
   }
 
-  .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: -12px;
-    color: #ff385c;
+  .options ul{
+    gap:30px;
   }
 
-  #logo {
-    margin-top: 10px;
-    margin-left: 8px;
-    width: 60px;
-    margin-bottom: 10px;
+  .logo {
+    margin-left:0;
+    margin-top:5px;
   }
 
-  #host:hover {
-    color: #ff385c !important;
+  .options ul li:hover {
+    color:white;
+    cursor: pointer;
   }
 
-  #globe:hover {
-    color: #ff385c !important;
-  }
+  
 
-  .bi.bi-list {
-    display: none;
-  }
+  
 }
