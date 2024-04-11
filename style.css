@@ -24,12 +24,7 @@ nav {
     margin-left: 10px;
 }
 
-.dropdown {
-    position: absolute;
-    top:12px;
-    right:10px;
-    
-}
+
 
 .dropdown-toggle::after {
     display: none;
@@ -49,10 +44,14 @@ nav {
 
 /*BARRA RICERCA*/
 
+.row.ps-2 {
+    width: 95%;
+}
+
 #barra-ricerca {
     font-size: 15px;
     background-color: white;
-    padding: 10px 40px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     margin: 10px;
@@ -61,8 +60,8 @@ nav {
 }
 
 .ricerca {
-    width: 115px;
-    height: 50px;
+    width: 50px;
+    height: 50px;        
     border-radius: 50%;
     background-color: #e41d56;
     display: flex;
@@ -80,10 +79,15 @@ label {
 
 #location, #check-in, #check-out, #guest {
     border: transparent;
+    background-color: transparent;
+}
+
+#guest {
+    width: 100px;
 }
 
 #section1 {
-    height: 85vh;
+    height: 95vh;
     background-image: url(/assets/home.jpg);
     background-size: cover;
     background-position: center;
@@ -99,7 +103,7 @@ label {
 
 #go-near h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 3rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -159,39 +163,37 @@ h6 {
     display: flex;
 }
 
-
+@media screen and (max-width: 992px) {
+    .dropdown {
+        position: absolute;
+        top:12px;
+        right:10px;
+        
+    }
+}
 
 
              /*Media Query Large Settings*/
 
 @media screen and (min-width: 992px) { 
 
-    .dropdown {
-        position: absolute;
-        top:3px;
-        right:70px;
-        
-    }
-
-    .bi.bi-globe {
-        margin-right:30px;
-    }
-
     #barra-ricerca {
         font-size: 10px;
         background-color: white;
-        margin: 0 350px 0 350px;
+        margin: 0 30%;
         padding: 5px 10px;
         border-radius: 50px;
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: nowrap;
+        width: 500px;
     }
 
     .ricerca {
+        border-radius: 50%;
         margin-left: 50px;
-        width: 40px;
+        width: 30px;
         height: 30px;
     }
    
