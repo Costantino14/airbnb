@@ -1,6 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    background-color: #000;
+}
+
 /*NavBar*/
 
 nav {
@@ -31,6 +35,17 @@ nav {
     display: none;
 }
 
+.dropdown-menu.profile {  /*Modifiche necessarie al giusto posizionamento della dropbox*/
+    padding: 10px;
+    position:absolute;
+    left: -100px;
+    top:50px;  
+}
+
+.dropdown-menu.profile .bi {
+    margin-right: 20px;
+} 
+
 
 /*BARRA RICERCA*/
 
@@ -46,7 +61,7 @@ nav {
 }
 
 .ricerca {
-    width: 100px;
+    width: 115px;
     height: 50px;
     border-radius: 50%;
     background-color: #e41d56;
@@ -54,6 +69,8 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -96,6 +113,11 @@ label {
 
 /*SECTION 2*/
 
+#section2{
+    padding-top: 50px;
+    background-color: #fff;
+}
+
 .col-6 img {
     max-width: 65px;
     border-radius: 10px;
@@ -104,6 +126,10 @@ label {
 
 .container .row:last-child {
     padding-top: 10px;
+}
+
+.img1 {
+    margin-bottom: 20px;
 }
 
 .description {
@@ -127,17 +153,23 @@ h6 {
    
 }
 
+.link-img {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+}
 
 
 
-             /*Media Query Laptop Settings*/
+
+             /*Media Query Large Settings*/
 
 @media screen and (min-width: 992px) { 
 
     .dropdown {
         position: absolute;
         top:3px;
-        right:80px;
+        right:70px;
         
     }
 
@@ -176,6 +208,10 @@ h6 {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-style: normal;
+    }
+
+    .img1 {
+        margin-bottom: 0;
     }
 
 
