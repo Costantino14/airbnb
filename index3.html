@@ -62,6 +62,27 @@
 
     <!--FINE NAV-->
 
+    <!--MODALE-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Share on social media</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Share</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--FINE MODALE-->
+
+
     <main>
       <div class="container">
         <div class="row">
@@ -75,7 +96,10 @@
             </div>
             <div class="icons d-flex margin-end">
               <div class="me-4">
-                <i class="bi bi-box-arrow-up me-2"></i>Share
+                <!--BOTTONE MODALE-->
+                <button type="button" class="btn btn-body p-0 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="bi bi-box-arrow-up me-2"></i> Share
+                </button>
               </div>
               <div><i id="preferiti" class="bi bi-heart me-2"></i>Save</div>
             </div>
