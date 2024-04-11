@@ -100,8 +100,6 @@ h1 {
   display:none;
 }
 
-
-
 @media (max-width: 576px) {
 
   .container{
@@ -156,10 +154,6 @@ h1 {
     color:white;
     cursor: pointer;
   }
-
-  
-
-
 
 }
 
@@ -217,16 +211,6 @@ h1 {
     cursor: pointer;
   }
 
-
-
-
-
-
- 
-
- 
- 
- 
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -270,16 +254,6 @@ h1 {
     color:white;
     cursor: pointer;
   }
-
-
-
-  
-
-  
-
-
-
-
   
 }
 
@@ -290,5 +264,4 @@ h1 {
     margin-top:40px;
   }
 
- 
 }

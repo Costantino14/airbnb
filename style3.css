@@ -20,18 +20,17 @@ main {
 }
 
 .logo {
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 .logo img {
-  width:100px;
+  width: 100px;
 }
 
-
 .options ul {
-  display:flex;
+  display: flex;
   list-style: none;
-  gap:20px;
+  gap: 20px;
 }
 
 .options ul li {
@@ -43,7 +42,7 @@ main {
 }
 
 .small {
- background-color: #ff385c;
+  background-color: #ff385c;
 }
 
 .options:last-child {
@@ -51,11 +50,11 @@ main {
 }
 
 #large {
-  display:block;
+  display: block;
 }
 
 #small {
-  display:none;
+  display: none;
 }
 
 .rounded-main {
@@ -138,7 +137,6 @@ main {
   border: 1px solid #ff385c;
 }
 
-
 .main-img {
   cursor: pointer;
   height: 100%;
@@ -161,17 +159,14 @@ main {
   padding-right: 90px;
 }
 
-
 .dropdown-item:hover {
   background-color: #ff385c !important;
   color: white !important;
 }
 
-
 #host:hover {
   color: #ff385c !important;
 }
-
 
 #globe:hover {
   color: #ff385c !important;
@@ -194,14 +189,6 @@ main {
   width: 100px;
 }
 
-
-
-
-
-
-
-
-
 /*MEDIA QUERIES*/
 
 /*Small devices (landscape phones)*/
@@ -219,38 +206,30 @@ main {
     position: absolute;
     right: -70px;
   }
-  
 
   #large {
-    display:none;
+    display: none;
   }
 
-  #small{
-    display:block;
+  #small {
+    display: block;
     background-color: #ff385c;
-    height:60px;
+    height: 60px;
   }
 
-  .options ul{
-    gap:30px;
+  .options ul {
+    gap: 30px;
   }
 
   .logo {
-    margin-left:0;
-    margin-top:5px;
+    margin-left: 0;
+    margin-top: 5px;
   }
 
   .options ul li:hover {
-    color:white;
+    color: white;
     cursor: pointer;
   }
- 
-
-
- 
-
-
-  
 }
 
 /*Medium devices (tablets)*/
@@ -280,32 +259,28 @@ main {
   }
 
   #large {
-    display:none;
+    display: none;
   }
 
-  #small{
-    display:block;
+  #small {
+    display: block;
     background-color: #ff385c;
-    height:60px;
+    height: 60px;
   }
 
-  .options ul{
-    gap:30px;
+  .options ul {
+    gap: 30px;
   }
 
   .logo {
-    margin-left:0;
-    margin-top:5px;
+    margin-left: 0;
+    margin-top: 5px;
   }
 
   .options ul li:hover {
-    color:white;
+    color: white;
     cursor: pointer;
   }
-
-  
-  
-
 }
 
 /*Large devices*/
@@ -335,30 +310,26 @@ main {
   }
 
   #large {
-    display:none;
+    display: none;
   }
 
-  #small{
-    display:block;
+  #small {
+    display: block;
     background-color: #ff385c;
-    height:60px;
+    height: 60px;
   }
 
-  .options ul{
-    gap:30px;
+  .options ul {
+    gap: 30px;
   }
 
   .logo {
-    margin-left:0;
-    margin-top:5px;
+    margin-left: 0;
+    margin-top: 5px;
   }
 
   .options ul li:hover {
-    color:white;
+    color: white;
     cursor: pointer;
   }
-
-  
-
-  
 }
